@@ -1,0 +1,16 @@
+#ball {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s cubic-bezier(.3 , 1.5,.6,1);
+}
+
+body {
+    background-color: lightblue;
+    height: 100vh;
+}
