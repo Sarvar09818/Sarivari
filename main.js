@@ -1,9 +1,15 @@
-const ball  = document.getElementById('ball');
+// Handle contact form submission
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-document.body.onclick = (e) => {
-    ball.style.top = e.clientY + 'px';
-    ball.style.left = e.clientX + 'px';
-    ball.style.background = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-    document.body.style.background = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-    
-}
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (name && email && message) {
+    alert(`Thank you, ${name}! Your message has been sent successfully.`);
+    this.reset();
+  } else {
+    alert("Please fill in all fields.");
+  }
+});
