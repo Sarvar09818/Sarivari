@@ -1,16 +1,27 @@
-#ball {
-    width: 100px;
-    height: 100px;
-    background-color: darkblue;
-    border-radius: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s cubic-bezier(.3 , 1.5,.6,1);
+/* Custom Styles */
+
+#hero {
+  background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
 }
 
-body {
-    background-color: lightblue;
-    height: 100vh;
+#hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#hero .content {
+  position: relative;
+  z-index: 2;
+}
+
+.card img {
+  object-fit: cover;
+  height: 250px;
+}
+
+footer {
+  font-size: 0.9rem;
 }
